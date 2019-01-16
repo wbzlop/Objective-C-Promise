@@ -4,12 +4,12 @@ It will be executed in sequence.Avoid "callback hell".
 
 ## Sample
 
-### import head file
+### Import head file
 
 ```objective-c
 #import "ZZPromise.h"
 ```
-### usage
+### Usage
 ```objective-c
 ZZPromise.promise().await(^(Resolve resolve, Reject reject) {
         resolve(nil);
@@ -24,7 +24,7 @@ ZZPromise.promise().await(^(Resolve resolve, Reject reject) {
     });
 ```
 In "await" block you must call "resolve" function or "reject" function.
-### example
+### Example
 
 ```objective-c
     __weak typeof(self) weakSelf = self;
