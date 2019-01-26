@@ -2,7 +2,7 @@
 promise tool for objective-c.
 It will be executed in sequence.Avoid "callback hell".
 
-接触Javascript后觉得 promise 非常好用，iOS项目开发SDK过程中初始化流程涉及到多个异步回调，所以使用block特性，写了一个promise工具，优化初始化流程，提高代码可读性。
+接触Javascript后觉得 promise 非常好用，iOS项目开发SDK过程中初始化流程涉及到多个异步回调嵌套，所以使用block特性，写了一个promise工具，优化初始化流程，提高代码可读性。
 ## Sample
 
 ### Import head file
@@ -25,6 +25,7 @@ ZZPromise.promise().await(^(Resolve resolve, Reject reject) {
     });
 ```
 In "await" block you must call "resolve" function or "reject" function.
+
 ### Example
 
 ```objective-c
