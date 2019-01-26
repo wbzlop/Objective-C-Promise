@@ -24,7 +24,8 @@ ZZPromise.promise().await(^(Resolve resolve, Reject reject) {
         
     });
 ```
-In "await" block you must call "resolve" function or "reject" function.
+在"await"中必须调用"resolve"或者"reject"。
+resolve使流程继续向下执行，reject直接跳到catch然后final(如果有的话)。
 
 ### Example
 
