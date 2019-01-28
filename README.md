@@ -85,6 +85,7 @@ breakBlock：跳出递归
         //遍历可用广告
         if([set.list count] > index)
         {
+            index++;
             LFMAdWrapper *ad = set.list[index];
             [ad fetchWithComplete:^ (BOOL success, LFMAdWrapper * _Nonnull adWrapper) {
                 
